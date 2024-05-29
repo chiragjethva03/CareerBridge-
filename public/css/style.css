@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(197 197 197 / 23%);
+}
+.signup{
+    width: 500px;
+    padding: 0.3rem;
+    border-radius: 20px;
+    border: 1px solid rgb(151, 145, 145);
+    background-color: white;
+    margin: 0.2rem;
+}
+
+.signup button{
+    margin: 0.3rem;
+}
+
+.signup h3{
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    color: rgb(134, 165, 240);
+}
