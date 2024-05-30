@@ -8,7 +8,7 @@ const session = require("express-session");
 const dotenv = require("dotenv").config();
 const multer = require("multer");
 const {storage, cloudinary} = require("./cloudConfig");
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
 
 //middlewares
 app.set("views", path.join(__dirname, "views"));
@@ -70,12 +70,10 @@ app.post("/signup", (req, res) => {
     }
 })
 
-app.post("/signup-company",upload.single('image'), (req, res) => {
-    let { nameofcompany, email, password, websitelink, phone, location, requirement} = req.body;
-    console.log(nameofcompany, email, password, websitelink, phone, location, requirement);
+app.post("/signup-company", upload.single('image'), (req, res) => {
     console.log(req.file);
-    res.send(req.file);
-});
+    res.send("well request accepted");
+})
 
 app.get("/", (req, res) => {
     res.render("./listings/index.ejs");
