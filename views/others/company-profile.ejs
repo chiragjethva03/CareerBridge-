@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBridge</title>
+    <link rel="icon" href="/img/logo.png" type="main_logo_">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg company-navbar" style="background-color: 
+#A4CDED;">
+        <div class="logo-only">
+            <img src="/img/logo.png" alt="check your network please">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="back-icon-company-profile">
+            <a href="/company"><i class="fa-solid fa-arrow-left"></i></i></a>
+        </div>
+        <div class="all-details">
+            <div class="first-section">
+                <img src="<%= company.photos %>" alt="check your network please">
+            </div>
+            <div class="second-section">
+                <h3 class="buttom-margin">
+                    <span style="font-weight: 350;">Company Name: </span>&nbsp; <%= company.nameofcompany %>
+                </h3>
+                <h5 class="buttom-margin">
+                    <span style="font-weight: 350;">For inquiry: </span> &nbsp; <%= company.email %>
+                </h5>
+                <p class="buttom-margin">
+                    <span>Company Address: </span>&nbsp;<%= company.location %>
+                </p>
+                <p class="buttom-margin">
+                    <span>Mobile no.: </span>&nbsp;<%= company.phone %>
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="company-overview">
+            <div class="name">
+                <h2><%= company.nameofcompany %></h2>
+            </div>
+            <div class="email">
+                <h4>Email</h4>
+                <p><%= company.email %></p>
+            </div>
+            <div class="overview">
+                <h4>Overview</h4>
+                <p><%= company.requirement %></p>
+            </div>
+            <div class="website">
+                <h4>Website</h4>
+                <a href="<%= company.websitelink %>" target="_blank"><%= company.websitelink %></a>
+            </div>
+            <div class="phone">
+                <h4>Phone</h4>
+                <a href="<%= company.websitelink %>" target="_blank"><%= company.phone %></a>
+            </div>
+            <div class="industry">
+                <h4>Industry</h4>
+                <p><%= company.industry %></p>
+            </div>
+            <div class="size">
+                <h4>Company Size</h4>
+                <p><%= company.companysize %> associated members</p>
+            </div>
+            <div class="Headquarters">
+                <h4>Headquarters</h4>
+                <p><%= company.location %></p>
+            </div>
+            <div class="founded">
+                <h4>Founded</h4>
+                <p><%= company.founded %></p>
+            </div>
+        </div>
+
+        <div class="apply">
+            <a href="<%= company.websitelink %>" class="btn btn-primary" target="_blank">Apply</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>&copy; 2024</li>
+            <li>About</li>
+            <li>Accessibility</li>
+            <li>User Agreement</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Copyright Policy</li>
+            <li>Brand Policy</li>
+            <li>Community Guidelines</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

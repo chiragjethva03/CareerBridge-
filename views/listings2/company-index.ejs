@@ -1,0 +1,16 @@
+<% layout("/layout2/boilerplate") -%>
+<% for(details of allCompany) {%>
+    <div class="company-list">
+        <div class="image">
+            <img src="<%= details.photos %>" alt="check your network">
+        </div>
+        <div class="details">
+            <h4 class="margin-bitton">Name : <%= details.nameofcompany %></h4>
+            <h5 class="margin-bitton">Email: <%= details.email %></h5>
+            <p class="margin-bitton">Locaion: <%= details.location %></p>
+        </div>
+        <div class="forward-icon">
+            <a href="/<%= details._id %>/company"><i class="fa-solid fa-forward"></i></a>
+        </div>
+    </div>
+<% } %>

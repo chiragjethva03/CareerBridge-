@@ -1,11 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup as Intern</title>
-</head>
-<body>
-    <h1>signup as Intern</h1>
-</body>
-</html>
+<% layout("/layout/boilerplate") -%>
+<div class="back-icon">
+    <a href="/signup"><i class="fa-solid fa-arrow-left"></i></i></a>
+</div>
+<div class="main-content">
+    <div class="signup">
+        <h3>SignUp for Intern</h3>
+        <form action="/signup-intern" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+            <label for="username" class="form-label">username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" class="form-control"
+                required>
+            <div class="invalid-feedback">
+                plz Enter your username.
+            </div>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your Email.
+            </div>
+
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control"
+                required>
+            <div class="invalid-feedback">
+                plz Enter your password.
+            </div>
+
+            <label for="photos" class="form-label">Upload photos</label>
+            <input type="file" name="photos" id="photos" placeholder="Enter your profile image" class="form-control"
+                required>
+            <div class="invalid-feedback">
+                plz Upload your image.
+            </div>
+
+            <label for="mobilenumbe" class="form-label">Phone no</label>
+            <input type="number" name="mobilenumbe" id="mobilenumbe" placeholder="Enter your number"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your no.
+            </div>
+
+
+            <label for="education" class="form-label">education</label>
+
+            <select id="education" name="education" class="form-control">
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="BE">BE</option>
+            </select>
+
+
+
+            <label for="experience" class="form-label">experience</label>
+            <input type="text" name="experience" id="experience" placeholder="you have any experience or freshers.?"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your experience.
+            </div>
+
+            <button class="btn" style="background-color: #A4CDED;">Sign Up</button>
+
+        </form>
+    </div>
+</div>
+
+    

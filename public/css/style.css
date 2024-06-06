@@ -1,5 +1,13 @@
 .container{
     display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.main-content{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -10,18 +18,533 @@ body{
 .signup{
     width: 500px;
     padding: 0.3rem;
-    border-radius: 20px;
-    border: 1px solid rgb(151, 145, 145);
+    border-radius: 10px;
+    border: 0.6px solid rgb(151, 145, 145);
     background-color: white;
     margin: 0.2rem;
+    margin-top: 3rem;
 }
 
 .signup button{
-    margin: 0.3rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    background-color: rgb(77 129 255 / 75%) !important;
 }
 
 .signup h3{
     text-align: center;
     margin: 1rem 0 1rem 0;
-    color: rgb(134, 165, 240);
+    color: rgb(77 129 255 / 75%)
 }
+
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem
+}
+.navbar-brand img{
+    height: 69px !important;
+    width: 68px !important;
+    margin: 0.5rem;
+}
+.navbar-brand p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #005eff;
+}
+.navbar-nav{
+    display: flex !important;
+    flex-direction: row;
+}
+.navbar-nav li{
+    margin: 1rem;
+}
+
+
+.navbar-heght{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+}
+.nav-icon img{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+}
+
+.nav-icon p{
+    text-align: center;
+}
+
+.footer{
+    background-color: #A4CDED;
+}
+
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.footer li{
+    list-style: none;
+    margin: 1rem;
+}
+
+.choose{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.text{
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 509px ;
+}
+
+.text p{
+    margin-top: 3rem;
+}
+
+.text h3{
+    color: #005eff;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.images{
+    margin: 0.4rem;
+    margin-left: 1rem;
+    padding: 0.4rem;
+    width: 421px;
+}
+
+.images img{
+    height: 311px;
+    width: 400px;
+}
+
+.jobs{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 3rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.heading{
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 439px;
+    color: #005eff;
+    margin-top: -168px;
+}
+
+.heading h2{
+    font-size: 2.3rem;
+}
+
+.tools{
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 421px ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 509px;
+}
+
+.tool{
+    color: #005eff;
+    padding: 0.8em;
+    border: 2px solid #005eff;
+    border-radius: 26px;
+    margin: 0.3rem;
+}
+
+.post-job{
+    display: flex;
+    width: 100%;
+    margin: 1rem;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-color: #A4CDED;;
+}
+
+.text-job{
+
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 787px;
+}
+
+.text-job h3{
+    font-size: 3rem;
+}
+
+.buttons-job{
+    margin: 0.4rem;
+    padding: 0.4rem;
+
+}
+
+.connectcopany{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.helps{
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 533px;   
+}
+
+.helps h2{
+    font-size: 3rem;
+    color: #005eff;
+}
+
+.helps .tool{
+    width: 60%;
+    margin-top: 3rem;
+    text-align: center;
+}   
+.connectcopany img{
+    margin: 0.4rem;
+    padding: 0.4rem;    
+}
+
+.navigate{
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #A4CDED;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.questions{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+
+.questions h2{
+    font-weight: 700;
+}
+
+.questions p{
+    color: rgb(239, 59, 59);
+    font-size: 1.3rem;
+}
+
+.ans{
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ans p{
+    margin-bottom: 0;
+}
+.ans i{
+    margin-left: 1rem;
+}
+
+.final-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.browse{
+    padding: 0.5rem;
+    display: flex;
+    margin: 1rem;
+}
+
+.browse .headings{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.browse .features{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.generale{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.browse-career{
+    margin: 1rem;
+    margin-left: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.final-image{
+    margin: 1rem;
+}
+
+.back-icon{
+    margin-top: 3rem;
+    margin-left: 17rem;
+}
+
+.back-icon i{
+    font-size: 1.4rem;
+}
+
+.logo-company img{
+    height: 45px;
+    width: 45px;
+    margin: 1rem;
+}
+
+.profile{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.company-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .logo-company img{
+        height: 35px;
+        width: 35px;
+        margin: 0;
+    }
+    .profile{
+        height: 30px;
+        width: 30px;
+        margin: 0;
+    }
+
+    .btn-outline-success{
+        margin: 0 0.1rem 0 0.1rem;
+    }
+}
+
+.company-list{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10pz;
+    border-radius: 10px;
+}
+
+.company-list .image{
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.company-list .image img{
+    height: 94px;
+    width: 92px;
+    border-radius: 10px;
+}
+
+.margin-bitton{
+    margin-bottom: 0;
+}
+
+.forward-icon{
+    margin-left: 30rem;
+}
+
+.forward-icon i{
+    color: #A4CDED;
+    font-size: 2rem;
+}
+
+.details{
+    margin-left: 1rem;
+    width: 30%;
+}
+
+@media (max-width: 500px) {
+    .forward-icon{
+        margin-left: 0rem;
+        margin-left: 0.1rem
+    }
+    .details{
+        margin-left: 0rem;
+        width: auto;
+    }
+}
+
+.logo-profile img{
+    height: 45px;
+    width: 45px;
+    margin: 1rem;
+}
+
+
+.logo-only img{
+    height: 45px;
+    width: 45px;
+    margin: 0.4rem;
+}
+.all-details{
+    border-radius: 10px;
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buttom-margin{
+    margin-bottom: 0;
+}
+
+.first-section{
+    margin: 0.4rem;
+}
+
+.first-section img{
+    height: 150px;
+    padding: 0.4rem;
+    width: 150px;
+}
+
+.second-section{
+    margin: 0.4rem 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back-icon-company-profile{
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.back-icon-company-profile i{
+    font-size: 2rem;
+}
+
+.company-overview{
+    border-radius: 10px;
+    margin-top: 2rem;
+    background-color: white;
+}
+.name{
+    margin: 1rem;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.name h2{
+    text-decoration: underline;
+    color: #005eff;
+}
+
+.email{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+
+.website{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+
+.website a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.phone{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+.phone a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.industry{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+.size{
+    
+    margin: 1rem;
+    padding: 0.4rem;
+}
+.founded{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+.Headquarters{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+.overview{
+    margin: 1rem;
+    padding: 0.4rem;
+}
+.apply{
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1.3rem;
+    background-color: white;
+}
+
+
+.apply a{
+    width: 100%;
+    background-color: #005eff;
+}
+

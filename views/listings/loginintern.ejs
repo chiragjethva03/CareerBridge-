@@ -1,0 +1,62 @@
+<% layout("/layout/boilerplate") -%>
+<div class="back-icon">
+    <a href="/login"><i class="fa-solid fa-arrow-left"></i></i></a>
+</div>
+<div class="main-content">
+    <div class="signup">
+        <h3>For Intern Login</h3>
+        <form id="login-form" class="needs-validation" novalidate>
+
+            <label for="email" class="form-label">Intern Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your email.
+            </div>
+
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control"
+                required>
+            <div class="invalid-feedback">
+                plz Enter your password.
+            </div>
+            <button class="btn" style="background-color: #A4CDED;">Login</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      try {
+        const response = await fetch('/login-intern', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email, password })
+        });
+
+        const data = await response.json();
+        
+        if (response.ok) {
+          // Store token and user details in localStorage
+          localStorage.setItem('token', data.token);
+          localStorage.setItem('user', JSON.stringify(data.user));
+
+          // Redirect or update UI as needed
+          window.location.href = '/'; // Redirect to home page or dashboard
+        } else {
+          // Handle errors
+          alert(data.message || 'Login failed');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        console.log('An error occurred. Please try again later.');
+      }
+    });
+</script>
