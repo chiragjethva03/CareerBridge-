@@ -1,31 +1,31 @@
 <% layout("/layout/boilerplate") -%>
-<div class="back-icon">
+  <div class="back-icon">
     <a href="/login"><i class="fa-solid fa-arrow-left"></i></i></a>
-</div>
-<div class="main-content">
+  </div>
+  <div class="main-content">
     <div class="signup">
-        <h3>For Intern Login</h3>
-        <form id="login-form" class="needs-validation" novalidate>
+      <h3>For Intern Login</h3>
+      <form id="login-form" class="needs-validation" novalidate>
 
-            <label for="email" class="form-label">Intern Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
-            <div class="invalid-feedback">
-                plz Enter your email.
-            </div>
+        <label for="email" class="form-label">Intern Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+        <div class="invalid-feedback">
+          plz Enter your email.
+        </div>
 
-            <label for="password" class="form-label">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control"
-                required>
-            <div class="invalid-feedback">
-                plz Enter your password.
-            </div>
-            <button class="btn" style="background-color: #A4CDED;">Login</button>
-        </form>
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control"
+          required>
+        <div class="invalid-feedback">
+          plz Enter your password.
+        </div>
+        <button class="btn" style="background-color: #A4CDED;">Login</button>
+      </form>
     </div>
-    </div>
-</div>
+  </div>
+  </div>
 
-<script>
+  <script>
     document.getElementById('login-form').addEventListener('submit', async (event) => {
       event.preventDefault();
 
@@ -40,16 +40,13 @@
           },
           body: JSON.stringify({ email, password })
         });
-
+        console.log("response", response)
         const data = await response.json();
-        
-        if (response.ok) {
-          // Store token and user details in localStorage
-          localStorage.setItem('token', data.token);
-          localStorage.setItem('user', JSON.stringify(data.user));
+        console.log("data", data)
 
-          // Redirect or update UI as needed
-          window.location.href = '/'; // Redirect to home page or dashboard
+        if (data.success) {
+          localStorage.setItem("user", JSON.stringify(data.user));
+          window.location.href = '/';
         } else {
           // Handle errors
           alert(data.message || 'Login failed');
@@ -59,4 +56,4 @@
         console.log('An error occurred. Please try again later.');
       }
     });
-</script>
+  </script>

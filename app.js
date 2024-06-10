@@ -15,23 +15,25 @@ const Intern = require("./models/intern");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
-const localStorage = require('localStorage');
 const ExpressErr = require("./utilis/expressErr");
+const bodyParser = require("body-parser");
+const { LocalStorage } = require('node-localstorage');
+const localStorage = new LocalStorage('./scratch'); 
 
 //verify Token middleware
 const verifyToken = (req, res, next) => {
     const token = req.cookies.jwt;
     console.log(token);
     if (!token) {
-      return res.redirect('/login');
+        return res.redirect('/login');
     }
     jwt.verify(token, 'veryTopSecret', (err, decoded) => {
-      if (err) {
-        console.log(err);
-        return res.redirect('/login');
-      }
-      req.user = decoded; // Attach the decoded token data to the request object
-      next();
+        if (err) {
+            console.log(err);
+            return res.redirect('/login');
+        }
+        req.user = decoded; // Attach the decoded token data to the request object
+        next();
     });
 };
 
@@ -40,8 +42,9 @@ const verifyToken = (req, res, next) => {
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.engine('ejs', ejsMate);
+app.use(bodyParser.json());
 app.use(cookieParser());
-
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
@@ -174,23 +177,27 @@ app.post("/login", (req, res) => {
 
 app.post("/login-intern", async (req, res) => {
     let { email, password } = req.body;
+
     const user = await Intern.findOne({ email: email });
-    
     if (!user) {
         req.flash("error", "User not found. Please signup first");
         return res.redirect('/signup');
     }
+
     const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) { 
+    if (!isMatch) {
         req.flash("error", "Invalid password please try again latter");
         return res.redirect("/login");
     };
 
-    const token = createToken(Intern._id);
+    const token = createToken(user._id);
     res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
 
-    req.flash("success", "Login successfully");
-    res.redirect("/");
+    return res.status(200).json({
+        success: true,
+        message: "Login successfully",
+        user: user
+    });
 });
 
 app.post("/login-company", async (req, res) => {
@@ -206,22 +213,32 @@ app.post("/login-company", async (req, res) => {
         return res.redirect("/login");
     };
 
-    const token = createToken(Company._id);
+    const token = createToken(user._id);
     res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
 
-    req.flash("success", "Login successfully");
-    res.redirect("/");
+    return res.status(200).json({
+        success: true,
+        message: "Login successfully",
+        user: user
+    });
 })
 
 app.get("/company", async (req, res) => {
-    let allCompany = await Company.find({});
-    res.render("./listings2/company-index.ejs", {allCompany});
+    try {
+        let allCompany = await Company.find({});
+        let currentUser = localStorage.getItem("user");
+        console.log(currentUser);
+        res.render("./listings2/company-index.ejs", { allCompany });
+    } catch (error) {
+        console.error("Error:", error);
+        res.status(500).send("Internal Server Error");
+    }
 });
 
 app.get("/:id/company", async (req, res) => {
     let id = req.params.id;
     let company = await Company.findById(id);
-    res.render("./others/company-profile.ejs", {company});
+    res.render("./others/company-profile.ejs", { company });
 })
 
 
