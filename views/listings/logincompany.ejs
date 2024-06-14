@@ -43,11 +43,17 @@
         console.log("data", data)
 
         if (data.success) {
-          localStorage.setItem("user", JSON.stringify(data.user));
-          window.location.href = '/';
+            localStorage.setItem("user", JSON.stringify(data.user));
+            window.location.href = '/';
+            
         } else {
-          // Handle errors
-          alert(data.message || 'Login failed');
+            if (response.status === 404) {
+                window.location.href = '/signup';
+            } else if(response.status === 401){
+                window.location.href = '/login';
+            } else {
+                alert(data.message || 'Login failed');
+            }
         }
       } catch (error) {
         console.error('Error:', error);

@@ -33,7 +33,11 @@ const companySchema = new mongoose.Schema({
     },
     founded: {
         type: Number
-    }
+    },
+    role: {
+        type: String,
+        default: 'company'
+    },
 
 });
 

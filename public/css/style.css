@@ -1,9 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    flex-direction: column;
-    justify-content: center; */
+
 }
 
 .main-content{
@@ -22,7 +20,7 @@ body{
     border: 0.6px solid rgb(151, 145, 145);
     background-color: white;
     margin: 0.2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .signup button{
@@ -43,6 +41,7 @@ body{
     align-items: center;
     margin-left: 1rem
 }
+
 .navbar-brand img{
     height: 69px !important;
     width: 68px !important;
@@ -78,6 +77,14 @@ body{
 .nav-icon img{
     height: 40px;
     width: 40px;
+    align-items: center;
+}
+
+.nav-icon i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -350,6 +357,13 @@ body{
     border-radius: 50%;
     margin: 1rem;
 }
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
 .company-navbar{
     display: flex;
     align-items: center;
@@ -366,6 +380,11 @@ body{
         height: 30px;
         width: 30px;
         margin: 0;
+    }
+    .profile img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
     }
 
     .btn-outline-success{
@@ -422,6 +441,17 @@ body{
         margin-left: 0rem;
         width: auto;
     }
+    
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer li{
+        list-style: none;
+        margin: 1rem;
+        font-size: small;
+    }
 }
 
 .logo-profile img{
@@ -467,12 +497,12 @@ body{
 }
 
 .back-icon-company-profile{
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 4rem;
 }
 
 .back-icon-company-profile i{
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .company-overview{
@@ -548,3 +578,258 @@ body{
     background-color: #005eff;
 }
 
+.details-section{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.img{
+    margin: 1rem;
+}
+
+.details-section img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.name-details{
+    margin: 0 0 0 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+} 
+.all{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+.edit-profile{
+    margin-bottom: 1rem;
+}
+
+
+
+/* responsive design for index_page */
+@media (max-width: 500px) {
+    .navbar-brand{
+        margin-left: 0rem
+    }
+
+    .choose{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text{
+        width: 100%;
+        
+    }
+    
+    .text p{
+        margin-top: 1rem;
+    }
+    
+    .text h3{
+        color: #005eff;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .images{
+        margin: 0;
+        margin-left: 0rem;
+        padding: 0.4rem;
+        width: 100%;
+    }
+    
+    .images img{
+        height: 311px;
+        width: 100%;
+    }
+
+    .jobs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        margin-top: 0rem;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .heading{
+        margin: 0rem;
+        padding: 0.4rem;
+        width: 100%;
+        color: #005eff;
+        margin-top: 0;
+    }
+
+    .heading h2{
+        font-size: 1.4rem;
+    }
+
+    .tools{
+        margin-top: 1rem;
+        padding: 0.4rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tool{
+        padding: 0.3em;
+        margin: 0.2rem;
+    }
+
+    .post-job{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0rem;
+        padding: 0.4rem;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        background-color: #A4CDED;;
+    }
+    
+    .text-job{
+        margin: 0.4rem;
+        padding: 0.4rem;
+        width: 100%;
+    }
+    
+    .text-job h3{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .buttons-job{
+        margin: 0rem;
+        padding: 1rem;
+    }
+
+    .connectcopany{
+        flex-direction: column;
+        width: 100%;
+        margin: 0rem;
+        margin-top: 0.6rem;
+    }
+    
+    .helps{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem;
+        padding: 0.4rem;
+        width: 100%;   
+    }
+    
+    .helps h2{
+        font-size: 1.5rem;
+        color: #005eff;
+    }
+    
+    .helps .tool{
+        width: 60%;
+        margin-top: 0.2rem;
+        text-align: center;
+    }   
+    .connectcopany img{
+        margin: 0rem;
+        padding: 0.4rem;  
+        width: 100%;  
+    }
+
+    .ans{
+        margin: 1rem;
+        margin-top: 0rem;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .navigate{
+        margin: 0.2rem;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .final-navbar{
+        margin-top: 0.3rem;
+        margin: 0rem;
+        width: 100%;
+    }
+    
+    .browse{
+        padding: 0.5rem;
+        display: flex;
+        margin: 0rem;
+    }
+    
+    .browse .headings{
+        font-weight: 800;
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+    
+    .browse .features{
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-style: italic;
+        cursor: pointer;
+    }
+    
+    .generale{
+        margin: 0rem;
+    }
+    
+    .browse-career{
+        margin: 0rem;
+        margin-left: 4rem;
+    }
+    
+    .final-image{
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .final-image img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .footer ul{
+        margin-top: 1rem;
+    }
+
+    .back-icon{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .signup{
+        margin-top: 1rem;
+    }
+    .back-icon-company-profile{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+}   

@@ -21,7 +21,14 @@ const internSchema = new mongoose.Schema({
     },
     experience: {
         type: String
-    }
+    },
+    about: {
+        type: String
+    },
+    role: {
+        type: String,
+        default: 'intern'
+    },
 })
 
 const Intern = mongoose.model("Intern", internSchema);

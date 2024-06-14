@@ -1,0 +1,89 @@
+<% layout("/layout/boilerplate") -%>
+<div class="back-icon">
+    <a href="/profile/<%= userDetails._id %>"><i class="fa-solid fa-arrow-left"></i></i></a>
+</div>
+<div class="main-content">
+    <div class="signup">
+        <h3>Edit your CompanyPage</h3>
+        <form action="/<%= userDetails._id %>/edit?_method=PUT" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+            <label for="nameofcompany" class="form-label">Name of Company</label>
+            <input type="text" value="<%= userDetails.nameofcompany %>" name="nameofcompany" id="nameofcompany"
+                class="form-control" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                plz Enter your Company name.
+            </div>
+
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" value="<%= userDetails.email %>" class="form-control"
+                required>
+            <div class="invalid-feedback">
+                plz Enter your company emial.
+            </div>
+
+            <label for="websitelink" class="form-label">Website Link</label>
+            <input type="text" name="websitelink" id="websitelink" value="<%= userDetails.websitelink %>"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your websitelink.
+            </div>
+
+            <label for="phone" class="form-label">Phone no</label>
+            <input type="number" name="phone" id="phone" value="<%= userDetails.phone %>" class="form-control"
+                required>
+            <div class="invalid-feedback">
+                plz Enter your company no.
+            </div>
+
+            <!-- <label for="photos" class="form-label">Upload Image</label>
+            <input type="file" name="image" id="photos" value="<%= userDetails.photos %>" class="form-control"
+            >
+            <div class="invalid-feedback">
+                plz Upload your company image.
+            </div> -->
+
+            <label for="location" class="form-label">location</label>
+            <input type="text" name="location" id="location" value="<%= userDetails.location %>"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your company location.
+            </div>
+
+            <label for="requirement" class="form-label">requirement</label>
+            <textarea name="requirement" id="requirement" placeholder="Enter your new if you want Requirement"
+                class="form-control" rows="4"><%= userDetails.requirement %></textarea>
+            <div class="invalid-feedback">
+                plz Enter your company requirement.
+            </div>
+
+            <label for="industry" class="form-label">Industry</label>
+            <input type="text" name="industry" id="industry" value="<%= userDetails.industry %>"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your company industry.
+            </div>
+
+            <label for="companysize" class="form-label">Company Size</label>
+            <input type="number" name="companysize" id="companysize" value="<%= userDetails.companysize %>"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your companysize.
+            </div>
+
+            <label for="founded" class="form-label">Founded in</label>
+            <input type="number" name="founded" id="founded" value="<%= userDetails.founded %>"
+                class="form-control" required>
+            <div class="invalid-feedback">
+                plz Enter your company founded date.
+            </div>
+
+
+
+            <button class="btn" style="background-color: #A4CDED;">Edit</button>
+
+        </form>
+    </div>
+</div>
+    
