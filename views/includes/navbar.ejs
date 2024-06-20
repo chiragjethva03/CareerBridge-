@@ -1,5 +1,4 @@
-<nav class="navbar navbar-expand-lg " style="background-color: 
-#A4CDED;">
+<nav class="navbar navbar-expand-lg " style="background-color: #A4CDED;">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="/img/logo.png" alt="check your network connections">
@@ -10,38 +9,34 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-heght">
-
-               
-                    <li class="nav-item" style="display: flex; align-items: center; justify-content: center;">
-                        <a class="btn btn-light" href="/login" style="border-radius: 25px;">LogIn</a>
-                    </li>
-                    <li class="nav-item" style="display: flex; align-items: center; justify-content: center;">
-                        <a class="btn btn-light" href="/signup" style="border-radius: 25px;">SignUp</a>
-                    </li>
-               
-
-                
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-heght ">
+            
+                <% if(isIntern) {%>
                     <li class="nav-item nav-icon">
                         <a class="nav-link nav" href="/company">
                             <img src="/img/icon2.png" alt="network connection lose">
                             <p>Company</p>
                         </a>
                     </li>
-                
+                <% } %>
+                <% if(isCompany) {%>
                     <li class="nav-item nav-icon">
-                        <a class="nav-link nav" href="#">
+                        <a class="nav-link nav" href="/applicants">
                             <i class="fa-solid fa-users-gear"></i>
                             <p>Applicant</p>
                         </a>
+                    </li>                
+                <% } %>
+    
+                <% if (!isAuthenticated) { %>
+                    <li class="nav-item" style="display: flex; align-items: center; justify-content: center;">
+                        <a class="btn btn-light" href="/login" style="border-radius: 25px;">LogIn</a>
                     </li>
-              
-             
+                    <li class="nav-item" style="display: flex; align-items: center; justify-content: center;">
+                        <a class="btn btn-light" href="/signup" style="border-radius: 25px;">SignUp</a>
+                    </li>
+                <% } %>
             </ul>
         </div>
     </div>
 </nav>
-
-<!-- Debugging Info (Optional: Remove in production) -->
-
-

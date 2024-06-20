@@ -38,6 +38,10 @@ const companySchema = new mongoose.Schema({
         type: String,
         default: 'company'
     },
+    applicants: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Form'
+    }]
 
 });
 

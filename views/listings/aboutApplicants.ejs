@@ -1,0 +1,81 @@
+<% layout("/layout/boilerplate") -%>
+
+    <div class="back-icon-company-profile">
+        <a href="/applicant"><i class="fa-solid fa-arrow-left"></i></i></a>
+    </div>
+
+ 
+        <div class="main-form">
+            <% for(form of forms) {%>
+            <div class="small">
+                <h4>Name: <%= form.fullName %>
+                </h4>
+                <p><span style="font-weight: 700;">Address:</span> <%= form.address %>
+                </p>
+                <p><span style="font-weight: 700;">Phone:</span> <%= form.phone %>
+                </p>
+                <p><span style="font-weight: 700;">Email:</span> <%= form.email %>
+                </p>
+                <p><span style="font-weight: 700;">position:</span> <%= form.position %>
+                </p>
+                <p><span style="font-weight: 700;">salary:</span> <%= form.salary %>
+                </p>
+                <p><span style="font-weight: 700;">Starting Date:</span> <%= form.startDate %>
+                </p>
+                <p><span style="font-weight: 700;">Employment Type:</span> <%= form.employmentType %>
+                </p>
+                <p><span style="font-weight: 700;">School:</span> <%= form.highSchool %>
+                </p>
+                <p><span style="font-weight: 700;">School Location:</span> <%= form.highSchoolLocation %>
+                </p>
+                <p><span style="font-weight: 700;">College:</span> <%= form.college %>
+                </p>
+                <p><span style="font-weight: 700;">College Location:</span> <%= form.collegeLocation %>
+                </p>
+                <p><span style="font-weight: 700;">Degree:</span> <%= form.degree %>
+                </p>
+                <p><span style="font-weight: 700;">Certifications:</span> <%= form.certifications %>
+                </p>
+            </div>
+            <% } %>
+        </div>
+        
+
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    // Retrieve user data from localStorage
+                    const userData = localStorage.getItem('user');
+
+                    if (userData) {
+                        try {
+                            // Attempt to parse the userData to ensure it's valid JSON
+                            const parsedUserData = JSON.parse(userData);
+
+                            // Function to send the userData to the server
+                            const sendRequest = (userData) => {
+                                const xhr = new XMLHttpRequest();
+                                const url = `/:id/applicant?userData=${encodeURIComponent(userData)}`; // Encode the userData
+                                xhr.open('GET', url, true);
+                                xhr.onload = function () {
+                                    if (xhr.status === 200) {
+                                        document.body.innerHTML = xhr.responseText;
+                                    } else {
+                                        console.error('Failed to load template');
+                                    }
+                                };
+                                xhr.send();
+                            };
+
+                            // Call the function to send the data
+                            sendRequest(userData);
+
+                        } catch (error) {
+                            console.error('Invalid JSON data in localStorage:', error);
+                        }
+                    } else {
+                        console.error('No user data found in localStorage');
+                    }
+                });
+
+            </script>

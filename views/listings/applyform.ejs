@@ -1,0 +1,107 @@
+<% layout("/layout/boilerplate") -%>
+    <div class="back-icon">
+        <a href="/<%= forId._id %>/company"><i class="fa-solid fa-arrow-left"></i></i></a>
+    </div>
+    <div class="main-content">
+        <div class="signup">
+            <h3>Employment Application Form</h3>
+                <form action="/<%= forId._id %>/apply" method="post" class="needs-validation" novalidate>
+                    <h4>Personal Information :</h4>
+                <label for="fullName" class="form-label">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required class="form-control"
+                    placeholder="Enter your fullName">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">plz Enter your fullName.</div>
+
+                <label for="address" class="form-label">Address:</label>
+                <input type="text" id="address" name="address" required class="form-control"
+                    placeholder="Enter your valid address">
+                <div class="invalid-feedback">plz Enter your address.</div>
+
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your Phone no."
+                    required>
+                <div class="invalid-feedback">plz Enter your valid Phone no.</div>
+
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email Address"
+                    required>
+                <div class="invalid-feedback">plz Enter your Email</div>
+
+                <label for="dob" class="form-label">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" class="form-control" placeholder="Enter your BirthDate" required>
+                <div class="invalid-feedback">plz Enter your dob</div>
+
+                <h4>Position Details :</h4>
+                <label for="position" class="form-label">Position Applied For:</label>
+                <input type="text" id="position" name="position" class="form-control"
+                    placeholder="Enter your Position Details" required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="salary" class="form-label">Desired Salary:</label>
+                <input type="text" id="salary" name="salary" class="form-control" placeholder="Enter Expected salary"
+                    required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="startDate" class="form-label">Available Start Date:</label>
+                <input type="date" id="startDate" name="startDate" class="form-control"
+                    placeholder="Enter Available date" required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="employmentType" class="form-label">Employment Type:</label>
+                <select id="employmentType" name="employmentType" class="form-control" required>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="internship">Internship</option>
+                </select>
+
+                <h4>Education Background :</h4>
+                <label for="highSchool" class="form-label">High School:</label>
+                <input type="text" id="highSchool" name="highSchool" class="form-control" placeholder="Enter highSchool"
+                    required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="highSchoolLocation" class="form-label">Location:</label>
+                <input type="text" id="highSchoolLocation" name="highSchoolLocation" class="form-control"
+                    placeholder="Enter highSchoolLocation" required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="college" class="form-label">College/University:</label>
+                <input type="text" id="college" name="college" class="form-control" placeholder="Enter college"
+                    required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="collegeLocation" class="form-label">Location:</label>
+                <input type="text" id="collegeLocation" name="collegeLocation" class="form-control"
+                    placeholder="Enter collegeLocation" required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <label for="degree" class="form-label">Degree:</label>
+                <input type="text" id="degree" name="degree" class="form-control" placeholder="Enter degree" required>
+                <div class="invalid-feedback">plz Enter valid field</div>
+
+                <h4>Skills and Qualifications :</h4>
+                <label for="skills" class="form-label">Professional Skills:</label>
+                <textarea id="skills" name="skills" class="form-control" placeholder="Enter degree" required></textarea>
+                <div class="invalid-feedback">plz Enter your Skills</div>
+
+                <label for="certifications" class="form-label">Certifications and Licenses:</label>
+                <textarea id="certifications" name="certifications" class="form-control" placeholder="plz Enter your certification details if you have" required></textarea>
+                <div class="invalid-feedback">plz Enter your certification details if you have</div>
+
+
+                <div class="apply">
+                    <button>Submit Form</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+

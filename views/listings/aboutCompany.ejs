@@ -1,0 +1,89 @@
+<% layout("/layout/boilerplate") -%>
+
+<div class="back-icon-company-profile">
+    <a href="/company"><i class="fa-solid fa-arrow-left"></i></i></a>
+</div>
+
+<div class="all-details">
+    <div class="first-section">
+        <img src="<%= company.photos %>" alt="check your network please">
+    </div>
+    <div class="second-section">
+        <h3 class="buttom-margin">
+            <span style="font-weight: 350;">Company Name: </span>&nbsp; <%= company.nameofcompany %>
+        </h3>
+        <h5 class="buttom-margin">
+            <span style="font-weight: 350;">For inquiry: </span> &nbsp; <%= company.email %>
+        </h5>
+        <p class="buttom-margin">
+            <span>Company Address: </span>&nbsp;<%= company.location %>
+        </p>
+        <p class="buttom-margin">
+            <span>Mobile no.: </span>&nbsp;<%= company.phone %>
+        </p>
+
+    </div>
+</div>
+
+<div class="company-overview">
+    <div class="name">
+        <h2>
+            <%= company.nameofcompany %>
+        </h2>
+    </div>
+    <div class="email">
+        <h4>Email</h4>
+        <p>
+            <%= company.email %>
+        </p>
+    </div>
+    <div class="overview">
+        <h4>Overview</h4>
+        <p>
+            <%= company.requirement %>
+        </p>
+    </div>
+    <div class="website">
+        <h4>Website</h4>
+        <a href="<%= company.websitelink %>" target="_blank">
+            <%= company.websitelink %>
+        </a>
+    </div>
+    <div class="phone">
+        <h4>Phone</h4>
+        <a href="<%= company.websitelink %>" target="_blank">
+            <%= company.phone %>
+        </a>
+    </div>
+    <div class="industry">
+        <h4>Industry</h4>
+        <p>
+            <%= company.industry %>
+        </p>
+    </div>
+    <div class="size">
+        <h4>Company Size</h4>
+        <p>
+            <%= company.companysize %> associated members
+        </p>
+    </div>
+    <div class="Headquarters">
+        <h4>Headquarters</h4>
+        <p>
+            <%= company.location %>
+        </p>
+    </div>
+    <div class="founded">
+        <h4>Founded</h4>
+        <p>
+            <%= company.founded %>
+        </p>
+    </div>
+</div>
+
+<div class="apply">
+    <a href="/<%= company._id %>/apply" class="btn btn-primary">Apply</a>
+</div>
+</div>
+
+

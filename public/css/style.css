@@ -35,6 +35,15 @@ body{
     color: rgb(77 129 255 / 75%)
 }
 
+.signup  h4{
+    margin-top: 2rem;
+    color: rgb(77 129 255 / 75%);
+}
+
+.signup p{
+    text-align: center;
+    margin-top: 1rem;
+}
 
 .navbar-brand{
     display: flex;
@@ -351,16 +360,16 @@ body{
 }
 
 .profile{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-color: white;
     border-radius: 50%;
     margin: 1rem;
 }
 
 .profile img{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -372,18 +381,18 @@ body{
 
 @media (max-width: 500px) {
     .logo-company img{
-        height: 35px;
-        width: 35px;
+        height: 60px;
+        width: 60px;
         margin: 0;
     }
     .profile{
-        height: 30px;
-        width: 30px;
+        height: 60px;
+        width: 60px;
         margin: 0;
     }
     .profile img{
-        height: 30px;
-        width: 30px;
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
     }
 
@@ -572,6 +581,12 @@ body{
     background-color: white;
 }
 
+.apply button{
+    border: none;
+    border-radius: 10px;
+    background-color: #005eff;
+    color: white;
+}
 
 .apply a{
     width: 100%;
@@ -833,3 +848,30 @@ body{
         margin-left: 1rem;
     }
 }   
+.main-form{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.small{
+    margin: 1rem;
+    padding: 1rem;
+}
+.small h4{
+    text-align: center;
+}
+.title{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.title h3{
+    font-size: 2rem;
+    color: #005eff;
+    text-align: center;
+}
