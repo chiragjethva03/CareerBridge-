@@ -6,6 +6,7 @@ const ejsMate = require("ejs-mate");
 const path = require("path");
 const flash = require("connect-flash");
 const session = require("express-session");
+const MongoStore = require('connect-mongo');
 require("dotenv").config();
 const multer = require("multer");
 const { storage, cloudinary } = require("./cloudConfig");
@@ -83,6 +84,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
+// const store = MongoStore.create({
+//     mongoUrl: dbUrl,
+//     crypto: {
+//         secret: process.env.SECRET
+//     },
+//     touchAfter: 24 * 3600,
+// })
+
+// store.on("error", () => {
+//     console.log("ERROR IN MONGO SESSION STORE");
+// })
 
 // store session 
 const sessionOption = {
@@ -109,9 +121,9 @@ app.use((req, res, next) => {
 });
 
 // connection of MongoDB
-const dbUrl = process.env.ATLASDB_URL
-mongoose.connect(dbUrl, {
+mongoose.connect("mongodb://localhost:27017/careerbridge", {
     useNewUrlParser: true,
+
     useUnifiedTopology: true
 }).then(() => {
     console.log("MongoDB connection established");
