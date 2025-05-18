@@ -1,19 +1,20 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
 
 }
 
-.main-content{
+.main-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body{
+body {
     background-color: rgb(197 197 197 / 23%);
 }
-.signup{
+
+.signup {
     width: 500px;
     padding: 0.3rem;
     border-radius: 10px;
@@ -23,73 +24,78 @@ body{
     margin-top: 2rem;
 }
 
-.signup button{
+.signup button {
     margin-top: 0.8rem;
     width: 100%;
     background-color: rgb(77 129 255 / 75%) !important;
 }
 
-.signup h3{
+.signup h3 {
     text-align: center;
     margin: 1rem 0 1rem 0;
     color: rgb(77 129 255 / 75%)
 }
 
-.signup  h4{
+.signup h4 {
     margin-top: 2rem;
     color: rgb(77 129 255 / 75%);
 }
 
-.signup p{
+.signup p {
     text-align: center;
     margin-top: 1rem;
 }
 
-.navbar-brand{
+.navbar-brand {
     display: flex;
     align-items: center;
     margin-left: 1rem
 }
 
-.navbar-brand img{
+.navbar-brand img {
     height: 69px !important;
     width: 68px !important;
     margin: 0.5rem;
 }
-.navbar-brand p{
+
+.navbar-brand p {
     font-size: 1.5rem;
     font-weight: 600;
     color: #005eff;
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flex !important;
     flex-direction: row;
 }
-.navbar-nav li{
+
+.navbar-nav li {
     margin: 1rem;
 }
 
 
-.navbar-heght{
+.navbar-heght {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column;
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     flex-direction: column;
 }
-.nav-icon img{
+
+.nav-icon img {
     height: 40px;
     width: 40px;
     align-items: center;
 }
 
-.nav-icon i{
+.nav-icon i {
     height: 40px;
     width: 40px;
     display: flex;
@@ -97,27 +103,27 @@ body{
     align-items: center;
 }
 
-.nav-icon p{
+.nav-icon p {
     text-align: center;
 }
 
-.footer{
+.footer {
     background-color: #A4CDED;
 }
 
-.footer ul{
+.footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
 }
 
-.footer li{
+.footer li {
     list-style: none;
     margin: 1rem;
 }
 
-.choose{
+.choose {
     display: flex;
     align-items: center;
     margin: 1rem;
@@ -125,35 +131,35 @@ body{
     width: 100%;
 }
 
-.text{
+.text {
     margin: 0.4rem;
     padding: 0.4rem;
-    width: 509px ;
+    width: 509px;
 }
 
-.text p{
+.text p {
     margin-top: 3rem;
 }
 
-.text h3{
+.text h3 {
     color: #005eff;
     font-weight: 600;
     font-size: 2.2rem;
 }
 
-.images{
+.images {
     margin: 0.4rem;
     margin-left: 1rem;
     padding: 0.4rem;
     width: 421px;
 }
 
-.images img{
+.images img {
     height: 311px;
     width: 400px;
 }
 
-.jobs{
+.jobs {
     display: flex;
     align-items: center;
     margin: 1rem;
@@ -162,7 +168,7 @@ body{
     width: 100%;
 }
 
-.heading{
+.heading {
     margin: 0.4rem;
     padding: 0.4rem;
     width: 439px;
@@ -170,20 +176,20 @@ body{
     margin-top: -168px;
 }
 
-.heading h2{
+.heading h2 {
     font-size: 2.3rem;
 }
 
-.tools{
+.tools {
     margin: 0.4rem;
     padding: 0.4rem;
-    width: 421px ;
+    width: 421px;
     display: flex;
     flex-wrap: wrap;
     width: 509px;
 }
 
-.tool{
+.tool {
     color: #005eff;
     padding: 0.8em;
     border: 2px solid #005eff;
@@ -191,7 +197,7 @@ body{
     margin: 0.3rem;
 }
 
-.post-job{
+.post-job {
     display: flex;
     width: 100%;
     margin: 1rem;
@@ -199,57 +205,59 @@ body{
     justify-content: center;
     align-items: center;
     height: 350px;
-    background-color: #A4CDED;;
+    background-color: #A4CDED;
+    ;
 }
 
-.text-job{
+.text-job {
 
     margin: 0.4rem;
     padding: 0.4rem;
     width: 787px;
 }
 
-.text-job h3{
+.text-job h3 {
     font-size: 3rem;
 }
 
-.buttons-job{
+.buttons-job {
     margin: 0.4rem;
     padding: 0.4rem;
 
 }
 
-.connectcopany{
+.connectcopany {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
 }
 
-.helps{
+.helps {
     display: flex;
     flex-direction: column;
     margin: 0.4rem;
     padding: 0.4rem;
-    width: 533px;   
+    width: 533px;
 }
 
-.helps h2{
+.helps h2 {
     font-size: 3rem;
     color: #005eff;
 }
 
-.helps .tool{
+.helps .tool {
     width: 60%;
     margin-top: 3rem;
     text-align: center;
-}   
-.connectcopany img{
-    margin: 0.4rem;
-    padding: 0.4rem;    
 }
 
-.navigate{
+.connectcopany img {
+    margin: 0.4rem;
+    padding: 0.4rem;
+}
+
+.navigate {
     margin-top: 3rem;
     width: 100%;
     background-color: #A4CDED;
@@ -259,7 +267,7 @@ body{
     border-radius: 10px;
 }
 
-.questions{
+.questions {
     margin: 1rem;
     display: flex;
     align-items: center;
@@ -268,16 +276,16 @@ body{
     padding: 0.4rem;
 }
 
-.questions h2{
+.questions h2 {
     font-weight: 700;
 }
 
-.questions p{
+.questions p {
     color: rgb(239, 59, 59);
     font-size: 1.3rem;
 }
 
-.ans{
+.ans {
     margin: 1rem;
     background-color: white;
     border-radius: 10px;
@@ -287,14 +295,15 @@ body{
     cursor: pointer;
 }
 
-.ans p{
+.ans p {
     margin-bottom: 0;
 }
-.ans i{
+
+.ans i {
     margin-left: 1rem;
 }
 
-.final-navbar{
+.final-navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,26 +311,26 @@ body{
     margin-top: 3rem;
 }
 
-.browse{
+.browse {
     padding: 0.5rem;
     display: flex;
     margin: 1rem;
 }
 
-.browse .headings{
+.browse .headings {
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.browse .features{
+.browse .features {
     font-size: 1.1rem;
     font-weight: 600;
     font-style: italic;
     cursor: pointer;
 }
 
-.generale{
+.generale {
     margin: 1rem;
     display: flex;
     align-items: center;
@@ -331,7 +340,7 @@ body{
 
 
 
-.browse-career{
+.browse-career {
     margin: 1rem;
     margin-left: 6rem;
     display: flex;
@@ -340,26 +349,26 @@ body{
     flex-direction: column;
 }
 
-.final-image{
+.final-image {
     margin: 1rem;
 }
 
-.back-icon{
+.back-icon {
     margin-top: 3rem;
     margin-left: 17rem;
 }
 
-.back-icon i{
+.back-icon i {
     font-size: 1.4rem;
 }
 
-.logo-company img{
+.logo-company img {
     height: 45px;
     width: 45px;
     margin: 1rem;
 }
 
-.profile{
+.profile {
     height: 50px;
     width: 50px;
     background-color: white;
@@ -367,41 +376,43 @@ body{
     margin: 1rem;
 }
 
-.profile img{
+.profile img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
 
-.company-navbar{
+.company-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 @media (max-width: 500px) {
-    .logo-company img{
+    .logo-company img {
         height: 60px;
         width: 60px;
         margin: 0;
     }
-    .profile{
+
+    .profile {
         height: 60px;
         width: 60px;
         margin: 0;
     }
-    .profile img{
+
+    .profile img {
         height: 60px;
         width: 60px;
         border-radius: 50%;
     }
 
-    .btn-outline-success{
+    .btn-outline-success {
         margin: 0 0.1rem 0 0.1rem;
     }
 }
 
-.company-list{
+.company-list {
     width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
@@ -413,69 +424,76 @@ body{
     border-radius: 10px;
 }
 
-.company-list .image{
+.company-list .image {
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.company-list .image img{
+.company-list .image img {
     height: 94px;
     width: 92px;
     border-radius: 10px;
 }
 
-.margin-bitton{
+.margin-bitton {
     margin-bottom: 0;
 }
 
-.forward-icon{
+.forward-icon {
     margin-left: 30rem;
 }
 
-.forward-icon i{
+.forward-icon i {
     color: #A4CDED;
     font-size: 2rem;
 }
 
-.details{
+.details {
     margin-left: 1rem;
     width: 30%;
 }
 
 @media (max-width: 500px) {
-    .forward-icon{
+    .forward-icon {
         margin-left: 0rem;
         margin-left: 0.1rem
     }
-    .details{
+
+    .forward-icon i {
+        color: #A4CDED;
+        font-size: 1.2rem;
+    }
+
+    .details {
         margin-left: 0rem;
         width: auto;
     }
-    
-    .footer ul{
+
+    .footer ul {
         display: flex;
         flex-direction: column;
     }
-    
-    .footer li{
+
+    .footer li {
         list-style: none;
         margin: 1rem;
         font-size: small;
     }
 }
 
-.logo-profile img{
+.logo-profile img {
     height: 45px;
     width: 45px;
     margin: 1rem;
 }
 
 
-.logo-only img{
+.logo-only img {
     height: 45px;
     width: 45px;
     margin: 0.4rem;
 }
-.all-details{
+
+.all-details {
     border-radius: 10px;
     margin-top: 2rem;
     background-color: white;
@@ -483,21 +501,22 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.buttom-margin{
+
+.buttom-margin {
     margin-bottom: 0;
 }
 
-.first-section{
+.first-section {
     margin: 0.4rem;
 }
 
-.first-section img{
+.first-section img {
     height: 150px;
     padding: 0.4rem;
     width: 150px;
 }
 
-.second-section{
+.second-section {
     margin: 0.4rem 0 0.5rem 0;
     display: flex;
     align-items: center;
@@ -505,95 +524,103 @@ body{
     flex-direction: column;
 }
 
-.back-icon-company-profile{
+.back-icon-company-profile {
     margin-top: 3rem;
     margin-left: 4rem;
 }
 
-.back-icon-company-profile i{
+.back-icon-company-profile i {
     font-size: 1.4rem;
 }
 
-.company-overview{
+.company-overview {
     border-radius: 10px;
     margin-top: 2rem;
     background-color: white;
 }
-.name{
+
+.name {
     margin: 1rem;
     padding: 0.4rem;
     text-align: center;
 }
 
-.name h2{
+.name h2 {
     text-decoration: underline;
     color: #005eff;
 }
 
-.email{
+.email {
     margin: 1rem;
     padding: 0.4rem;
 }
 
-.website{
+.website {
     margin: 1rem;
     padding: 0.4rem;
 }
 
-.website a{
+.website a {
     text-decoration: none;
     font-weight: 600;
 }
 
-.phone{
+.phone {
     margin: 1rem;
     padding: 0.4rem;
 }
-.phone a{
+
+.phone a {
     text-decoration: none;
     font-weight: 600;
 }
-.industry{
+
+.industry {
     margin: 1rem;
     padding: 0.4rem;
 }
-.size{
-    
+
+.size {
+
     margin: 1rem;
     padding: 0.4rem;
 }
-.founded{
+
+.founded {
     margin: 1rem;
     padding: 0.4rem;
 }
-.Headquarters{
+
+.Headquarters {
     margin: 1rem;
     padding: 0.4rem;
 }
-.overview{
+
+.overview {
     margin: 1rem;
     padding: 0.4rem;
 }
-.apply{
+
+.apply {
     margin-top: 2rem;
     border-radius: 10px;
     padding: 1.3rem;
     background-color: white;
 }
 
-.apply button{
+.apply button {
     border: none;
     border-radius: 10px;
     background-color: #005eff;
     color: white;
 }
 
-.apply a{
+.apply a {
     width: 100%;
     background-color: #005eff;
 }
 
-.details-section{
+.details-section {
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -604,30 +631,33 @@ body{
     padding: 0.5rem;
 }
 
-.img{
+.img {
     margin: 1rem;
 }
 
-.details-section img{
+.details-section img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
-.name-details{
+
+.name-details {
     margin: 0 0 0 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-} 
-.all{
+}
+
+.all {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1rem;
 }
-.edit-profile{
+
+.edit-profile {
     margin-bottom: 1rem;
 }
 
@@ -635,11 +665,11 @@ body{
 
 /* responsive design for index_page */
 @media (max-width: 500px) {
-    .navbar-brand{
+    .navbar-brand {
         margin-left: 0rem
     }
 
-    .choose{
+    .choose {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -648,34 +678,34 @@ body{
         width: 100%;
     }
 
-    .text{
+    .text {
         width: 100%;
-        
+
     }
-    
-    .text p{
+
+    .text p {
         margin-top: 1rem;
     }
-    
-    .text h3{
+
+    .text h3 {
         color: #005eff;
         font-weight: 600;
         font-size: 1.5rem;
     }
 
-    .images{
+    .images {
         margin: 0;
         margin-left: 0rem;
         padding: 0.4rem;
         width: 100%;
     }
-    
-    .images img{
+
+    .images img {
         height: 311px;
         width: 100%;
     }
 
-    .jobs{
+    .jobs {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -684,8 +714,8 @@ body{
         justify-content: center;
         width: 100%;
     }
-    
-    .heading{
+
+    .heading {
         margin: 0rem;
         padding: 0.4rem;
         width: 100%;
@@ -693,11 +723,11 @@ body{
         margin-top: 0;
     }
 
-    .heading h2{
+    .heading h2 {
         font-size: 1.4rem;
     }
 
-    .tools{
+    .tools {
         margin-top: 1rem;
         padding: 0.4rem;
         width: 100%;
@@ -705,12 +735,12 @@ body{
         flex-wrap: wrap;
     }
 
-    .tool{
+    .tool {
         padding: 0.3em;
         margin: 0.2rem;
     }
 
-    .post-job{
+    .post-job {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -720,57 +750,59 @@ body{
         justify-content: center;
         align-items: center;
         height: 350px;
-        background-color: #A4CDED;;
+        background-color: #A4CDED;
+        ;
     }
-    
-    .text-job{
+
+    .text-job {
         margin: 0.4rem;
         padding: 0.4rem;
         width: 100%;
     }
-    
-    .text-job h3{
+
+    .text-job h3 {
         font-size: 2.4rem;
         margin-bottom: 2rem;
     }
-    
-    .buttons-job{
+
+    .buttons-job {
         margin: 0rem;
         padding: 1rem;
     }
 
-    .connectcopany{
+    .connectcopany {
         flex-direction: column;
         width: 100%;
         margin: 0rem;
         margin-top: 0.6rem;
     }
-    
-    .helps{
+
+    .helps {
         display: flex;
         flex-direction: column;
         margin: 0rem;
         padding: 0.4rem;
-        width: 100%;   
+        width: 100%;
     }
-    
-    .helps h2{
+
+    .helps h2 {
         font-size: 1.5rem;
         color: #005eff;
     }
-    
-    .helps .tool{
+
+    .helps .tool {
         width: 60%;
         margin-top: 0.2rem;
         text-align: center;
-    }   
-    .connectcopany img{
-        margin: 0rem;
-        padding: 0.4rem;  
-        width: 100%;  
     }
 
-    .ans{
+    .connectcopany img {
+        margin: 0rem;
+        padding: 0.4rem;
+        width: 100%;
+    }
+
+    .ans {
         margin: 1rem;
         margin-top: 0rem;
         background-color: white;
@@ -781,74 +813,76 @@ body{
         cursor: pointer;
     }
 
-    .navigate{
+    .navigate {
         margin: 0.2rem;
         margin-top: 0rem;
         width: 100%;
     }
 
-    .final-navbar{
+    .final-navbar {
         margin-top: 0.3rem;
         margin: 0rem;
         width: 100%;
     }
-    
-    .browse{
+
+    .browse {
         padding: 0.5rem;
         display: flex;
         margin: 0rem;
     }
-    
-    .browse .headings{
+
+    .browse .headings {
         font-weight: 800;
         font-size: 1rem;
         text-decoration: underline;
     }
-    
-    .browse .features{
+
+    .browse .features {
         font-size: 1.1rem;
         font-weight: 600;
         font-style: italic;
         cursor: pointer;
     }
-    
-    .generale{
+
+    .generale {
         margin: 0rem;
     }
-    
-    .browse-career{
+
+    .browse-career {
         margin: 0rem;
         margin-left: 4rem;
     }
-    
-    .final-image{
+
+    .final-image {
         width: 100%;
         margin: 0rem;
     }
 
-    .final-image img{
+    .final-image img {
         margin-top: 1rem;
         width: 100%;
     }
 
-    .footer ul{
+    .footer ul {
         margin-top: 1rem;
     }
 
-    .back-icon{
+    .back-icon {
         margin-top: 1rem;
         margin-left: 1rem;
     }
-    
-    .signup{
+
+    .signup {
         margin-top: 1rem;
     }
-    .back-icon-company-profile{
+
+    .back-icon-company-profile {
         margin-top: 1rem;
         margin-left: 1rem;
     }
-}   
-.main-form{
+}
+
+.main-form {
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -859,18 +893,22 @@ body{
     justify-content: center;
     margin-top: 2rem;
 }
-.small{
+
+.small {
     margin: 1rem;
     padding: 1rem;
 }
-.small h4{
+
+.small h4 {
     text-align: center;
 }
-.title{
+
+.title {
     margin-top: 2rem;
     font-size: 1.5rem;
 }
-.title h3{
+
+.title h3 {
     font-size: 2rem;
     color: #005eff;
     text-align: center;
