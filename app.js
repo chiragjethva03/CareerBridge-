@@ -14,7 +14,6 @@ const upload = multer({ storage });
 
 const Company = require("./models/company");
 const Intern = require("./models/intern");
-const Form = require("./models/applyForm");
 
 const authenticationRoutes = require("./routes/authentication");
 const companyRoutes = require("./routes/company")
@@ -121,9 +120,8 @@ app.use((req, res, next) => {
 });
 
 // connection of MongoDB
-mongoose.connect("mongodb://localhost:27017/careerbridge", {
+mongoose.connect(process.env.ATLASDB_URL, {
     useNewUrlParser: true,
-
     useUnifiedTopology: true
 }).then(() => {
     console.log("MongoDB connection established");
